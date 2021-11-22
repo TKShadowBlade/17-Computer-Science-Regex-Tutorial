@@ -1,7 +1,7 @@
 # 17-Computer-Science-Regex-Tutorial
 Computer Science for JavaScript Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+This gist was created to help explain the purpose and uses of what is known as a "regular expression". Simply put, a regular expression, or "regex", is a set of special characters that make up a specific search pattern. When coding, you can use a regular expression to fine-tune what kind of statement your program is set to look for in a particular instance. This is helpful when setting up a specific criteria for login credentials, or for identifying the format of a webpage URL.
 
 ## Summary
 
