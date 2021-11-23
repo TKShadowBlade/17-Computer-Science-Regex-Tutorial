@@ -34,6 +34,13 @@ The anchors of a regex specify where it begins and where it ends. This is done u
 
 ### Quantifiers
 
+Quantifiers are characters that you can use to identify groups of metacharacters:
+
+- the asterisk * searches for a match of 0 or more characters
+- the plus sign + searches for a match of 1 or more characters
+- the question mark ? searchese for a match between 0 and 1 character
+- using curly brackets {} lets you search for a match within a certain range of characters. You can write this either as {min, max} or as {n}, with n specifying a number range.
+
 ### Grouping Constructs
 
 ### Bracket Expressions
