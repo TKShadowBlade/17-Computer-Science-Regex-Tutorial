@@ -43,11 +43,19 @@ Quantifiers are characters that you can use to identify groups of metacharacters
 
 ### Grouping Constructs
 
+You can use parentheses () as a way to group subexpressions together. Doing so will allow you to search for a set of characters in a group.
+
+- Example: (po)* will search for zero or more instances of the character group "po".
+
 ### Bracket Expressions
 
 ### Character Classes
 
 ### The OR Operator
+
+The OR Operator is another name for the " | " character. you can use this in search groups such as what was discussed above, if you wish to alternate between characters in a search group.
+
+- Example: "(s|t)he" will search for groupings that contain "s" OR "t", followed by "h", followed by "e". 
 
 ### Flags
 
