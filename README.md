@@ -49,7 +49,31 @@ You can use parentheses () as a way to group subexpressions together. Doing so w
 
 ### Bracket Expressions
 
-### Character Classes
+Brackets identify an exact character or set of characters to match when searching. Any individual character inside brackets will be matched, as well as any set of characters. These are referred to as "character classes".
+
+- Example:
+
+```
+
+[abcd]
+
+```
+
+- This expression will match the letters "a" and "c" in the word "catch".
+
+If you include the ^ character inside of your brackets at the start, this will specify characters NOT to be matched. This is also known as a negated character class.
+
+- Example:
+
+```
+
+[^abcd]
+
+```
+
+- This will match any character that is NOT a, b, c, or d.
+
+You can also specify character sets/ranges using a hyphen ("abcd" is the same as "a-d").
 
 ### The OR Operator
 
