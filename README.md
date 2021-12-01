@@ -28,9 +28,17 @@ I will discuss each section of the search sequence and what the parameters mean.
 
 ## Regex Components
 
+The first thing you'll want to know is how to specify a what is to be regular expression. You use the slash '/' to identify where the regex starts and where it ends.
+
 ### Anchors
 
-The anchors of a regex specify where it begins and where it ends. This is done using the ^ character at the start of the expression, and the $ character at the end of it. You will also 
+The anchors of a regex specify where the search begins and where it ends. This is done using the carat '^' character at the start of the expression, and the dollar sign '$' character at the end of it.
+
+- Example:
+```
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+```
+- This regular expression for matching an email address shows that the search starts with any letter between a and z, and ends with any letter between a and z between two and six characters long.
 
 ### Quantifiers
 
@@ -38,7 +46,7 @@ Quantifiers are characters that you can use to identify groups of metacharacters
 
 - the asterisk * searches for a match of 0 or more characters
 - the plus sign + searches for a match of 1 or more characters
-- the question mark ? searchese for a match between 0 and 1 character
+- the question mark ? searches for a match between 0 and 1 character
 - using curly brackets {} lets you search for a match within a certain range of characters. You can write this either as {min, max} or as {n}, with n specifying a number range.
 
 ### Grouping Constructs
