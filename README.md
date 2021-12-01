@@ -101,4 +101,6 @@ The backslash '\' is used to do what is called "escaping characters". This is fo
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+I am an up-and-coming web developer with a taste for learning and improving my skillset. I am a perpetual work in progress, and am always looking for new ways to grow my knowledge base. If you want to get a better look at what projects I'm working on, you can visit my Github profile at the link below:
+
+- [Anthony K. Github Profile] (https://github.com/TKShadowBlade)
