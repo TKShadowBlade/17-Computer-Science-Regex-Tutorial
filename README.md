@@ -30,7 +30,7 @@ I will discuss each section of the search sequence and what the parameters mean.
 
 ### Anchors
 
-The anchors of a regex specify where it begins and where it ends. This is done using the ^ character at the start of the expression, and the $ character at the end of it.
+The anchors of a regex specify where it begins and where it ends. This is done using the ^ character at the start of the expression, and the $ character at the end of it. You will also 
 
 ### Quantifiers
 
@@ -83,7 +83,21 @@ The OR Operator is another name for the " | " character. you can use this in sea
 
 ### Flags
 
+Flags are additional modifiers that affect the search. There are six of these flags that are used in Javascript, such as:
+
+- 'g' is used to return ALL instances of a search parameter
+- 'i' is used to specify that a search parameter is case insensitive
+- 'm' is used for multiline searches, and it affects how the '^' and '$' anchors function.
+
 ### Character Escapes
+
+The backslash '\' is used to do what is called "escaping characters". This is for when you want to search for a literal character, not use it as a search modifier.
+
+- Example: The dot '.' is typically used to specify a search for any character. However, you can search for a literal dot if you write it as such:
+```
+/\./
+```
+
 
 ## Author
 
