@@ -117,25 +117,25 @@ The search parameter can be read as follows:
 - ^ is the beginning of the string
 - () specifies the subexpression group
 - Within the subexpression group, we are looking for a match of one or more characters (designated by a '+" character) that can be:
--- a through z (lowercase specifically)
--- numbers 0 through 9
--- an underscore
--- a period (the \ escapes the "any character" search parameter)
--- or a hyphen
+> a through z (lowercase specifically)
+> numbers 0 through 9
+> an underscore
+> a period (the \ escapes the "any character" search parameter)
+> or a hyphen
 - FOLLOWED BY tne '@' symbol
 - FOLLOWED BY the next subexpression group
 - Within which we are looking for a match of one or more characters that can be:
--- any number from 0 to 9
--- any lowercase letter from a through z
--- a period
--- or a hyphen
+> any number from 0 to 9
+> any lowercase letter from a through z
+> a period
+> or a hyphen
 - FOLLOWED BY a period
 - FOLLOWED BY another subexpression
 - Within which we are looking for
--- any lowercase letter from a through z
--- or a period
+> any lowercase letter from a through z
+> or a period
 - between two and six characters long
---And the dollar sign '$' signifies the last line of the string.
+- And the dollar sign '$' signifies the last line of the string.
 
 
 
