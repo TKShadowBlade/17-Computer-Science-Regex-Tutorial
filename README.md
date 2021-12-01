@@ -5,12 +5,10 @@ This gist was created to help explain the purpose and uses of what is known as a
 
 ## Summary
 
-The regex I will be outlying in this gist will be one that you can use to match an email address, such as the following:
+The regex I will be outlining in this gist will be one that you can use to match an email address, such as the following:
 
 ```
-
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
-
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ```
 
 I will discuss each section of the search sequence and what the parameters mean. This might look confusing, but each part of the expression specifies a match condition.
@@ -36,7 +34,7 @@ The anchors of a regex specify where the search begins and where it ends. This i
 
 - Example:
 ```
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ```
 - This regular expression for matching an email address shows that the search starts with any letter between a and z, and ends with any letter between a and z between two and six characters long.
 
@@ -47,7 +45,7 @@ Quantifiers are characters that you can use to identify groups of metacharacters
 - the asterisk * searches for a match of 0 or more characters
 - the plus sign + searches for a match of 1 or more characters
 - the question mark ? searches for a match between 0 and 1 character
-- using curly brackets {} lets you search for a match within a certain range of characters. You can write this either as {min, max} or as {n}, with n specifying a number range.
+- using curly braces {} lets you search for a match within a certain range of characters. You can write this either as {min, max} or as {n}, with n specifying a number range.
 
 ### Grouping Constructs
 
@@ -105,6 +103,40 @@ The backslash '\' is used to do what is called "escaping characters". This is fo
 ```
 /\./
 ```
+
+### Putting It All Together
+
+We know what the typical format of an email address looks like. Using the criteria laid out above, we can write a regular expression to identify and match an email address which looks like this:
+
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
+
+The search parameter can be read as follows:
+
+- ^ is the beginning of the string
+- () specifies the subexpression group
+- Within the subexpression group, we are looking for a match of one or more characters (designated by a '+" character) that can be:
+-- a through z (lowercase specifically)
+-- numbers 0 through 9
+-- an underscore
+-- a period (the \ escapes the "any character" search parameter)
+-- or a hyphen
+- FOLLOWED BY tne '@' symbol
+- FOLLOWED BY the next subexpression group
+- Within which we are looking for a match of one or more characters that can be:
+-- any number from 0 to 9
+-- any lowercase letter from a through z
+-- a period
+-- or a hyphen
+- FOLLOWED BY a period
+- FOLLOWED BY another subexpression
+- Within which we are looking for
+-- any lowercase letter from a through z
+-- or a period
+- between two and six characters long
+--And the dollar sign '$' signifies the last line of the string.
+
 
 
 ## Author
